@@ -1,3 +1,4 @@
+PImage tate;
 class Globo
 {
   float x, y,vx,vy;
@@ -7,6 +8,7 @@ class Globo
    y=_y; 
    vx=random(-0.5,0.5);
    vy=random(-3,-0.5);
+   
   }
 
   void update()
@@ -19,6 +21,7 @@ class Globo
   {
       strokeWeight(2);
       ellipse(x,y,70,100);
+      image(tate, x,y);
   }
   
 }
@@ -30,6 +33,7 @@ void setup()
 {
   size(640,480);
   globos = new ArrayList<Globo>();  
+  tate=loadImage("tatiana.jpg");
 }
 
 void draw()
