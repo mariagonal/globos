@@ -21,7 +21,7 @@ class Globo
   {
       strokeWeight(2);
       ellipse(x,y,70,100);
-      image(tate, x,y);
+      image(tate, x,y,90,60);
   }
   
 }
